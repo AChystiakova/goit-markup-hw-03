@@ -9,16 +9,51 @@
   --main-button-color: #188CE8;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /*головний колір сторінки  */
 
 body {
   color: var(--primary-text-color);
   font-family: Roboto, sans-serif;
   letter-spacing: 0.03em;
-  background: var(--main-site-color)
+  background-color: var(--main-site-color)
 }
 
 /*логотип*/
+.container {
+width: 1200px;
+padding-left: 15px;
+padding-right: 15px;
+margin-right: auto;
+margin-left: auto; 
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
 
 .logo-link {
   color: var(--titel-text-color);
@@ -27,19 +62,40 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
+
 .logo {
   color: var(--accent-color);
 }
 
 /* навігація сайту */
 
+.site-nav {
+display: flex;
+margin-left: 93px;
+
+}
+
+.site-nav .nav-item {
+  align-items: center;
+  
+}
+
+.site-nav .nav-item:not(:last-child) {
+ margin-right: 50px;
+}
+
 .site-nav .link {
+  display: block;
   color: var(--titel-text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  outline: solid tomato;
+ 
 }
 
 .site-nav .link:hover,
@@ -51,20 +107,38 @@ body {
   color: var(--accent-color);
 }
 
-ul {
+
+.list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /* навігація контактів */
 
 .header-contacts .contact-list {
+  display: block;
   color: var(--primary-text-color);
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  outline: solid tomato;
 }
+
+.header-contacts {
+ display: flex;
+ margin-left: auto;
+
+}
+
+.header-contacts .item + .item {
+  margin-left: 50px;
+}
+
 
 .header-contacts .contact-list:hover,
 .contact-list:focus {
@@ -73,23 +147,37 @@ ul {
 
 /* основний зміст студія*/
 
-.main-section {
-  background: var(--secondary-site-backgroud);
+.section {
+padding-top: 94px;
+padding-bottom: 94px;
+
+}
+
+.hero {
+  background-color: var(--secondary-site-backgroud);
+ 
+
 }
 
 .main-header {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 30px;
   color: var(--main-site-color);
   font-weight: 900;
   text-transform: uppercase;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
+  max-width: 696px;
   text-align: center;
+  margin: 0 auto 30px;
+  
 }
 
 .main-button {
   color: var(--main-site-color);
-  background-color: #2196f3;
+  background-color: var(--accent-color);
   cursor: pointer;
   font-family: inherit;
   font-weight: 700;
@@ -97,12 +185,20 @@ ul {
   line-height: 1.8;
   text-align: center;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  display: block;
+  margin: 0 auto;
+  padding: 10px 32px;
+  min-width: 216px;
+  border: 0
+ 
 }
 
 .main-button:hover,
 .main-button:focus {
 
-  background: var(--main-button-color);
+  background-color: var(--main-button-color);
+  
 }
 
 
@@ -124,7 +220,7 @@ ul {
   color: var(--titel-text-color);
   text-transform: uppercase;
   font-size: 14px;
-  line-height: calc(16 / 14);
+  line-height: calc(16 / 14); 
 }
 
 .titel-text {
@@ -140,12 +236,12 @@ ul {
 }
 
 .team {
-  background: var(--team-section-backgroung);
+  background-color: var(--team-section-backgroung);
 
 }
 
 .team-img {
-  background: var(--main-site-color);
+  background-color: var(--main-site-color);
 }
 
 .team-titel {
@@ -176,14 +272,14 @@ ul {
   text-align: center;
   letter-spacing:inherit;
   color: var(--titel-text-color);
-  background: var(--team-section-backgroung);
+  background-color: var(--team-section-backgroung);
   cursor: pointer;
 }
 
 .filter-button:hover,
 .filter-button:focus {
   color: var(--main-site-color);
-  background: var(--accent-color);
+  background-color: var(--accent-color);
 }
 
 .project-titel {
@@ -201,7 +297,7 @@ ul {
 /*Футер*/
 
 .footer-nav {
-  background: var(--secondary-site-backgroud);
+  background-color: var(--secondary-site-backgroud);
 }
 
 .footer-logo {
