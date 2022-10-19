@@ -20,7 +20,7 @@ html {
   margin: 0;
   padding: 0;
 }
-
+/* reset */
 h1,
 h2,
 h3,
@@ -31,6 +31,12 @@ p {
   margin-top: 0;
   margin-bottom: 0;
 }
+
+/* 
+.img {
+  display: block;
+} */
+
 
 /*головний колір сторінки  */
 
@@ -48,6 +54,17 @@ padding-left: 15px;
 padding-right: 15px;
 margin-right: auto;
 margin-left: auto; 
+}
+
+.header-nav {
+display: flex;
+align-items: center;
+/* outline: solid tomato; */
+
+}
+
+.header {
+  border: 1px solid #ECECEC;
 }
 
 .main-nav {
@@ -71,8 +88,9 @@ margin-left: auto;
 
 .site-nav {
 display: flex;
+/* outline: solid tomato; */
 margin-left: 93px;
-
+ 
 }
 
 .site-nav .nav-item {
@@ -94,7 +112,7 @@ margin-left: 93px;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-  outline: solid tomato;
+  /* outline: solid tomato; */
  
 }
 
@@ -110,7 +128,7 @@ margin-left: 93px;
 
 .list {
   list-style: none;
-  margin: 0;
+  /* margin: 0; */
   padding: 0;
 }
 
@@ -126,7 +144,7 @@ margin-left: 93px;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-  outline: solid tomato;
+  /* outline: solid tomato; */
 }
 
 .header-contacts {
@@ -156,7 +174,6 @@ padding-bottom: 94px;
 .hero {
   background-color: var(--secondary-site-backgroud);
  
-
 }
 
 .main-header {
@@ -201,7 +218,6 @@ padding-bottom: 94px;
   
 }
 
-
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -215,12 +231,31 @@ padding-bottom: 94px;
   margin: -1px;
 }
 
+/* section titel-box */
+
+ .titel-box {
+  background-color: var(--primary-site-background);
+  }
+
+ .feature {
+  display: flex;
+ }
+
+ .feature .titel-item {
+  margin-right: 30px;
+  width: 270px;  
+ }
+
+.feature .titel-item:last-child {
+  margin-right: 0;
+}
 
 .titel {
   color: var(--titel-text-color);
   text-transform: uppercase;
   font-size: 14px;
-  line-height: calc(16 / 14); 
+  line-height: calc(16 / 14);
+  margin-bottom: 10px; 
 }
 
 .titel-text {
@@ -228,38 +263,90 @@ padding-bottom: 94px;
   line-height: 1.7;
 }
 
+/* Section occupation */
+
+.occupation {
+  background: var(--primary-site-background)
+  
+}
+
+.occupation-img {
+  /* outline: solid tomato; */
+  display: flex;
+  
+}
+
+.occupation-img .img-item {
+margin-right: 30px;
+}
+
+.occupation-img .img-item:last-child {
+  margin-right: 0px;
+}
+
 .occupation-titel {
   color: var(--titel-text-color);
   font-size: 36px;
   line-height: 1.4;
   text-align: center;
+  padding-bottom: 50px;
+  
 }
 
-.team {
-  background-color: var(--team-section-backgroung);
+/* Section team */
 
+.team {
+  background: var(--team-section-backgroung);
+}
+
+.team-list {
+  /* outline: solid tomato; */
+  display: flex;
+}
+
+.team-list .team-img {
+  margin-right: 30px;
+
+}
+.team-list .team-img:last-child {
+margin-right: 0;
 }
 
 .team-img {
   background-color: var(--main-site-color);
+  /* outline: solid tomato; */
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
+.img { 
+  display: block;
+  margin-bottom: 30px;
+  
+}
 .team-titel {
   color: var(--titel-text-color);
   font-size: 36px;
   line-height: 1.4;
   text-align: center;
+  padding-bottom: 50px;
 }
 
 .team-name {
   color: var(--titel-text-color);
   font-size: 16px;
   line-height: 1.8;
+  text-align: center;
+  margin-bottom: 10px;
+  /* outline: solid tomato; */
 }
 
 .team-position {
   font-size: 16px;
   line-height: 1.8;
+  text-align: center;
+  margin-bottom: 30px;
+  /* outline: solid tomato; */
 }
 
 /* Портфоліо */
@@ -306,14 +393,28 @@ padding-bottom: 94px;
   text-decoration: none;
   font-size: 26px;
   line-height: 1.2;
+  /* outline: solid tomato; */
+  display: block;
+  padding-top: 60px;
+  padding-bottom: 20px;
+  
 }
 
 .card-address {
 font-style: normal;
-
+padding-bottom: 60px;
 }
 
-.footer-list .footer-address {
+.footer-list {
+ margin-bottom: 9px;
+ /* outline: solid tomato; */
+}
+
+.footer .footer-list:last-child {
+margin: 0px;
+}
+
+.footer .footer-address {
   color:var(--main-site-color);
   text-decoration: none;
   font-size: 14px;
@@ -321,7 +422,7 @@ font-style: normal;
 
 }
 
-.footer-list .footer-contact {
+.footer .footer-contact {
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
   font-size: 14px;
