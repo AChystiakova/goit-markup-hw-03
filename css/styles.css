@@ -32,12 +32,6 @@ p {
   margin-bottom: 0;
 }
 
-/* 
-.img {
-  display: block;
-} */
-
-
 /*головний колір сторінки  */
 
 body {
@@ -266,7 +260,7 @@ padding-bottom: 94px;
 /* Section occupation */
 
 .occupation {
-  background: var(--primary-site-background)
+  background-color: var(--primary-site-background)
   
 }
 
@@ -296,7 +290,7 @@ margin-right: 30px;
 /* Section team */
 
 .team {
-  background: var(--team-section-backgroung);
+  background-color: var(--team-section-backgroung);
 }
 
 .team-list {
@@ -351,6 +345,11 @@ margin-right: 0;
 
 /* Портфоліо */
 
+.projects {
+background-color: var(--primary-site-background);
+
+}
+
 .filter-button {
   font-family: inherit;
   font-weight: 500;
@@ -361,6 +360,19 @@ margin-right: 0;
   color: var(--titel-text-color);
   background-color: var(--team-section-backgroung);
   cursor: pointer;
+  border-radius: 4px;
+  padding: 6px 22px;
+  /* border: none; */
+}
+
+.button-list {
+display: flex;
+/* outline: solid tomato; */
+flex-direction: row;
+justify-content: center;
+gap: 8px;
+margin-bottom: 50px;
+
 }
 
 .filter-button:hover,
@@ -369,11 +381,34 @@ margin-right: 0;
   background-color: var(--accent-color);
 }
 
+
+.project-list {
+ display: flex;
+ flex-wrap: wrap;
+ gap: 30px;
+}
+
+.project-item {
+  background: #FFFFFF;
+}
+
+.project-img {
+display: inline-block;
+}
+
+.border-titel {
+ border: 1px solid #EEEEEE;
+ border-top: none;
+ padding: 20px 24px;
+}
+
 .project-titel {
   color: var(--titel-text-color);
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+  margin-bottom: 4px;
+ 
 }
 
 .project {
@@ -393,7 +428,6 @@ margin-right: 0;
   text-decoration: none;
   font-size: 26px;
   line-height: 1.2;
-  /* outline: solid tomato; */
   display: block;
   padding-top: 60px;
   padding-bottom: 20px;
@@ -407,7 +441,7 @@ padding-bottom: 60px;
 
 .footer-list {
  margin-bottom: 9px;
- /* outline: solid tomato; */
+
 }
 
 .footer .footer-list:last-child {
