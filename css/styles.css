@@ -20,6 +20,7 @@ html {
   margin: 0;
   padding: 0;
 }
+
 /* reset */
 h1,
 h2,
@@ -429,14 +430,13 @@ display: inline-block;
   font-size: 26px;
   line-height: 1.2;
   display: block;
-  padding-top: 60px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
   
 }
 
 .card-address {
 font-style: normal;
-padding-bottom: 60px;
+
 }
 
 .footer-list {
