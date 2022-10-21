@@ -228,9 +228,9 @@ padding-bottom: 94px;
 
 /* section titel-box */
 
- .titel-box {
+ /* .titel-box {
   background-color: var(--primary-site-background);
-  }
+  } */
 
  .feature {
   display: flex;
@@ -260,10 +260,10 @@ padding-bottom: 94px;
 
 /* Section occupation */
 
-.occupation {
+/* .occupation {
   background-color: var(--primary-site-background)
   
-}
+} */
 
 .occupation-img {
   /* outline: solid tomato; */
@@ -346,10 +346,10 @@ margin-right: 0;
 
 /* Портфоліо */
 
-.projects {
+/* .projects {
 background-color: var(--primary-site-background);
 
-}
+} */
 
 .filter-button {
   font-family: inherit;
@@ -363,7 +363,7 @@ background-color: var(--primary-site-background);
   cursor: pointer;
   border-radius: 4px;
   padding: 6px 22px;
-  /* border: none; */
+  border: none;
 }
 
 .button-list {
@@ -394,7 +394,7 @@ margin-bottom: 50px;
 }
 
 .project-img {
-display: inline-block;
+display:block;
 }
 
 .border-titel {
