@@ -21,6 +21,10 @@ html {
   padding: 0;
 }
 
+img {
+ display: block;
+}
+
 /* reset */
 h1,
 h2,
@@ -59,7 +63,7 @@ align-items: center;
 }
 
 .header {
-  border: 1px solid #ECECEC;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .main-nav {
@@ -83,7 +87,6 @@ align-items: center;
 
 .site-nav {
 display: flex;
-/* outline: solid tomato; */
 margin-left: 93px;
  
 }
@@ -107,8 +110,7 @@ margin-left: 93px;
   letter-spacing: 0.02em;
   padding-top: 32px;
   padding-bottom: 32px;
-  /* outline: solid tomato; */
- 
+  
 }
 
 .site-nav .link:hover,
@@ -123,7 +125,6 @@ margin-left: 93px;
 
 .list {
   list-style: none;
-  /* margin: 0; */
   padding: 0;
 }
 
@@ -163,12 +164,12 @@ margin-left: 93px;
 .section {
 padding-top: 94px;
 padding-bottom: 94px;
-
 }
 
 .hero {
-  background-color: var(--secondary-site-backgroud);
- 
+background-color: var(--secondary-site-backgroud);
+ padding-top: 200px;
+ padding-bottom: 200px;
 }
 
 .main-header {
@@ -228,11 +229,7 @@ padding-bottom: 94px;
 
 /* section titel-box */
 
- /* .titel-box {
-  background-color: var(--primary-site-background);
-  } */
-
- .feature {
+  .feature {
   display: flex;
  }
 
@@ -260,13 +257,12 @@ padding-bottom: 94px;
 
 /* Section occupation */
 
-/* .occupation {
-  background-color: var(--primary-site-background)
-  
-} */
+.occupation {
 
+  padding-top: 0px;
+  padding-bottom: 94px;
+}
 .occupation-img {
-  /* outline: solid tomato; */
   display: flex;
   
 }
@@ -284,7 +280,8 @@ margin-right: 30px;
   font-size: 36px;
   line-height: 1.4;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
+  /* outline: solid tomato; */
   
 }
 
@@ -309,14 +306,14 @@ margin-right: 0;
 
 .team-img {
   background-color: var(--main-site-color);
-  /* outline: solid tomato; */
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  /* outline: solid tomato; */
 }
 
-.img { 
-  display: block;
+.picture { 
   margin-bottom: 30px;
+  /* outline: solid tomato; */
   
 }
 .team-titel {
@@ -324,7 +321,7 @@ margin-right: 0;
   font-size: 36px;
   line-height: 1.4;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 }
 
 .team-name {
@@ -346,10 +343,6 @@ margin-right: 0;
 
 /* Портфоліо */
 
-/* .projects {
-background-color: var(--primary-site-background);
-
-} */
 
 .filter-button {
   font-family: inherit;
@@ -368,7 +361,6 @@ background-color: var(--primary-site-background);
 
 .button-list {
 display: flex;
-/* outline: solid tomato; */
 flex-direction: row;
 justify-content: center;
 gap: 8px;
@@ -389,9 +381,10 @@ margin-bottom: 50px;
  gap: 30px;
 }
 
-.project-item {
-  background: #FFFFFF;
-}
+/* .project-list .project-item { */
+/* background: var(--main-site-color); */
+ /* flex-basis: calc ((100%-30px*2) /3);
+} */
 
 .project-img {
 display:block;
@@ -421,6 +414,8 @@ display:block;
 
 .footer-nav {
   background-color: var(--secondary-site-backgroud);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .footer-logo {
