@@ -381,10 +381,9 @@ margin-bottom: 50px;
  gap: 30px;
 }
 
-/* .project-list .project-item { */
-/* background: var(--main-site-color); */
- /* flex-basis: calc ((100%-30px*2) /3);
-} */
+.project-list .project-item {
+  flex-basis: calc((100% - 30px * 2) / 3);
+}
 
 .project-img {
 display:block;
